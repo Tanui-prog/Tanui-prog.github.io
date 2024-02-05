@@ -320,7 +320,9 @@
   <section class="contact" id="contact">
     <div class="heading">Contact <span>Me</span></div>
   
-    <form action="https://formsubmit.co/vikiikiptoo@gmail.com" method="POST" >
+    <form action="https://api.web3forms.com/submit" method="POST" >
+      
+    <input type="hidden" name="access_key" value="e4e63e46-8da7-4df9-b28c-6f07292e0981">
       <div class="input-box">
         <input type="text" name="Name"  placeholder="Full Name" required />
         <input type="email"      name="email"  placeholder="Email Address" required />
@@ -332,6 +334,7 @@
       </div>
   
       <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <div class="h-captcha" data-captcha="true"></div>
       <input type="submit" value="Send Message" class="btn" />
     </form>
   </section>
@@ -353,6 +356,7 @@
 
   <!-- scroll reVEal -->
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 
   <!-- script swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
