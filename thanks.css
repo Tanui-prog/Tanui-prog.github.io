@@ -1,0 +1,106 @@
+* {
+    font-family: "Helvetica", sans-serif;
+  }
+  
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #contact #contact-title {
+    letter-spacing: 1.5px;
+    color: #202020;
+    font-size: 2rem;
+  }
+  #contact #contact-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    padding: 2vw;
+    gap: 20px;
+    box-shadow: 0px 0px 10px 5px #eeeeee;
+  }
+  #contact #contact-body #contact-name {
+    color: #202020;
+    font-size: 1.6rem;
+  }
+  #contact #contact-body #contact-desc {
+    color: #333533;
+    font-size: 30px;
+    text-align: center;
+  }
+  #contact #contact-body #contact-background {
+    border-radius: 20px;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+  }
+  #contact #contact-body #contact-pp {
+    z-index: 999;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #6b5151;
+  }
+.social-media a i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: green;
+    border: .2rem solid rgb(87, 129, 87);
+    border-radius: 50%;
+    box-shadow: 0 .2rem .5rem white;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin: 1rem 1rem 1rem 1rem;
+
+  }
+
+  .social-media a:hover {
+    color: #6b5151;
+}
+#contact-btn button {
+    
+    border: 0.9px solid #333533;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  #contact-btn button:hover {
+    background: #333533;
+    color: white;
+  }
+  @media (max-width: 1000px) {
+    #contact #contact-body {
+      width: 70%;
+    }
+  }
+  @media (max-width: 800px) {
+    #contact #contact-body {
+      width: 80%;
+    }
+}
+  @media (max-width: 500px) {
+    #contact #contact-body {
+      width: 50%;
+    }
+    #contact #contact-body #contact-desc {
+        color: #333533;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+  }
